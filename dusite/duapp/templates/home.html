@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University of Delhi</title>
+</head>
+<body>
+    <h1>Atma Ram Sanatan Dharma College, University of Delhi</h1>
+    <h2>Dhaula Kuan , Delhi - 110021</h2>
+    <h2>NIRF Ranking - 6 , NAAC Grade - A++</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.student_name.label_tag }} {{ form.student_name }}
+        {{ form.roll_number.label_tag }} {{ form.roll_number }}
+        {{ form.email.label_tag }} {{ form.email }}
+        {{ form.date_of_birth.label_tag }} {{ form.date_of_birth }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
